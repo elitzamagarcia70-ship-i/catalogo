@@ -1,0 +1,487 @@
+/* ======================================
+   CONFIGURACIÓN GENERAL
+====================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f2f6;
+    color: #333;
+}
+
+
+/* ======================================
+   ENCABEZADO
+====================================== */
+
+header {
+    background-color: #ffffff;
+    border-top: 50px solid #1565C0;
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ======================================
+   LOGO
+====================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #1565C0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    display: block;
+    color: #b08a20;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+
+/* ======================================
+   MENÚ
+====================================== */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: #1565C0;
+}
+
+
+/* ======================================
+   ÍCONO DE BÚSQUEDA
+====================================== */
+
+.menu .buscar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1565C0;
+}
+
+.menu .buscar:hover {
+    color: #4CAF50;
+}
+
+.menu .buscar svg {
+    display: block;
+}
+
+
+/* ======================================
+   BOTÓN ACTUALIZAR PRECIOS
+====================================== */
+
+#updatePrices {
+    background-color: #4CAF50;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 11px 20px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#updatePrices:hover {
+    background-color: #43a047;
+}
+
+#updatePrices:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+
+/* ======================================
+   TÍTULO
+====================================== */
+
+h1 {
+    text-align: center;
+
+    color: #1565C0;
+    font-size: 26px;
+
+    margin: 25px 0 10px;
+}
+
+
+/* ======================================
+   CATÁLOGO
+====================================== */
+
+.catalogo {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 20px auto;
+
+    padding: 10px 20px 40px;
+
+    display: grid;
+
+    /* 3 tarjetas por fila */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+
+    align-items: stretch;
+}
+
+
+/* ======================================
+   TARJETAS
+====================================== */
+
+.card {
+    background-color: white;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.2s;
+
+    display: flex;
+    flex-direction: column;
+
+    /* Hace que todas las tarjetas de
+       una misma fila tengan la misma altura */
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ======================================
+   IMAGEN PRINCIPAL
+====================================== */
+
+.card > img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s;
+}
+
+
+/* ======================================
+   AUMENTAR IMAGEN 10%
+====================================== */
+
+.card > img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ======================================
+   CONTENIDO
+====================================== */
+
+.card-content {
+    padding: 11px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+/* ======================================
+   INSTITUCIÓN
+====================================== */
+
+.institucion {
+    display: block;
+
+    font-size: 10px;
+    color: #777;
+
+    margin-bottom: 6px;
+}
+
+
+/* ======================================
+   TÍTULO DEL CURSO
+====================================== */
+
+.card-content h3 {
+    margin: 0 0 10px;
+
+    color: #222;
+
+    font-size: 15px;
+
+    line-height: 1.2;
+
+    min-height: 36px;
+}
+
+
+/* ======================================
+   DURACIÓN
+====================================== */
+
+.duracion {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 11px !important;
+
+    color: #444 !important;
+
+    font-weight: bold;
+
+    margin: 8px 0;
+}
+
+.duracion img {
+    width: 14px !important;
+    height: 14px !important;
+
+    object-fit: contain;
+}
+
+
+/* ======================================
+   DESCRIPCIÓN
+====================================== */
+
+.card-content > p:not(.duracion) {
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    color: #333;
+
+    font-weight: bold;
+
+    margin: 8px 0;
+
+    /*
+       Permitimos que las descripciones
+       crezcan según el contenido.
+    */
+    min-height: 58px;
+}
+
+
+/* ======================================
+   PRECIOS
+====================================== */
+
+.precios {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #ddd;
+
+    margin-top: auto;
+
+    padding-top: 8px;
+}
+
+
+/* ======================================
+   CADA PRECIO
+====================================== */
+
+.precio {
+    text-align: center;
+
+    border-right: 1px solid #ddd;
+
+    padding: 2px 4px;
+}
+
+.precio:last-child {
+    border-right: none;
+}
+
+
+/* ======================================
+   BANDERAS
+====================================== */
+
+.precio img {
+    width: 20px !important;
+    height: 13px !important;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 5px;
+}
+
+
+/* ======================================
+   NOMBRE DE MONEDA
+====================================== */
+
+.precio small {
+    display: block;
+
+    font-size: 8px;
+
+    color: #333;
+
+    font-weight: bold;
+
+    margin-bottom: 4px;
+}
+
+
+/* ======================================
+   PRECIO
+====================================== */
+
+.precio strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #222;
+}
+
+
+/* ======================================
+   BOTÓN INSCRIBIRSE
+====================================== */
+
+.btn {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 8px;
+
+    background-color: #1565C0;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+}
+
+
+/* ======================================
+   TABLET
+====================================== */
+
+@media (max-width: 1000px) {
+
+    .catalogo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ======================================
+   CELULAR
+====================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu {
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+}

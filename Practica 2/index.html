@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Cursos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================================
+         ENCABEZADO
+    ======================================= -->
+
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+
+            <img src="Imagenes/Logo.jpg" alt="Logo UNACH">
+
+            <div class="logo-text">
+                AprendeMas
+                <span>Escuela De Tecnologias Digitales Aplicadas</span>
+            </div>
+
+        </div>
+
+
+        <!-- MENÚ -->
+        <nav class="menu">
+
+            <a href="#">Contacto</a>
+
+            <a href="#">Tutoriales</a>
+
+            <a href="#">Inicio</a>
+            <a href="#">Cursos</a>
+            <a href="#">Ofertas</a>
+           <a href="#">Nosotros</a>
+
+    
+
+    <!-- ÍCONO DE BÚSQUEDA -->
+    <a href="#" class="buscar" title="Buscar">
+        <svg width="20" height="20" viewBox="0 0 24 24">
+            <circle
+                cx="11"
+                cy="11"
+                r="7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+            </circle>
+
+            <line
+                x1="16"
+                y1="16"
+                x2="21"
+                y2="21"
+                stroke="currentColor"
+                stroke-width="2">
+            </line>
+        </svg>
+    </a>
+
+</nav>
+
+
+        <!-- BOTÓN ACTUALIZAR PRECIOS -->
+        <button id="updatePrices">
+            🔄 Actualizar Precios
+        </button>
+
+    </header>
+
+
+
+    <!-- ======================================
+         CATÁLOGO
+    ======================================= -->
+
+    <main>
+
+        <h1>Catálogo de Cursos</h1>
+
+        <div class="catalogo">
+
+
+            <!-- =================================
+                 TARJETA 1
+            ================================== -->
+
+            <div class="card">
+
+                <img src="Imagenes/audiovisual.jpg"
+                     alt="Curso Producción Audiovisual">
+
+                <div class="card-content">
+
+                    <span class="institucion">UV</span>
+
+                    <h3>Producción Audiovisual</h3>
+
+                    <p class="duracion">
+
+                        <img src="Imagenes/reloj.avif"
+                             alt="Reloj">
+
+                        Duración: 20 horas
+
+                    </p>
+
+                    <p>
+                        El curso de Producción Audiovisual ofrece conocimientos sobre grabación de video y manejo de cámaras, además de enseñar técnicas de iluminación, composición de imágenes, edición de video y manejo de diferentes equipos audiovisuales.
+                    </p>
+
+
+                    <!-- PRECIOS -->
+
+                    <div class="precios">
+
+                        <div class="precio">
+
+                            <img src="Imagenes/Mexico.webp"
+                                 alt="México">
+
+                            <small>PrecioMXN</small>
+
+                            <strong class="price-mxn"
+                                    data-mxn="1500">
+                                $1,500.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/usa.jpg"
+                                 alt="Estados Unidos">
+
+                            <small>PrecioUS</small>
+
+                            <strong class="price-usd"
+                                    data-mxn="1500">
+                                $69.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/japon.jpg"
+                                 alt="Japón">
+
+                            <small>PrecioYen</small>
+
+                            <strong class="price-jpy"
+                                    data-mxn="1500">
+                                ¥7,500
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="btn">
+                        Inscribirse
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TARJETA 2
+            ================================== -->
+
+            <div class="card">
+
+                <img src="Imagenes/marketing.jpg"
+                     alt="Curso Marketing Digital">
+
+                <div class="card-content">
+
+                    <span class="institucion">COLMEX</span>
+
+                    <h3>Marketing Digital</h3>
+
+                    <p class="duracion">
+
+                        <img src="Imagenes/reloj.avif"
+                             alt="Reloj">
+
+                        Duración: 15 horas
+
+                    </p>
+
+                    <p>
+                        El curso de marketing digital tiene como
+                        propósito adquirir conocimientos y habilidades
+                        para promocionar productos o servicios mediante
+                        estrategias digitales.
+                    </p>
+
+
+                    <div class="precios">
+
+                        <div class="precio">
+
+                            <img src="Imagenes/Mexico.webp"
+                                 alt="México">
+
+                            <small>PrecioMXN</small>
+
+                            <strong class="price-mxn"
+                                    data-mxn="1000">
+                                $1,000.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/usa.jpg"
+                                 alt="Estados Unidos">
+
+                            <small>PrecioUS</small>
+
+                            <strong class="price-usd"
+                                    data-mxn="1000">
+                                $59.20
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/japon.jpg"
+                                 alt="Japón">
+
+                            <small>PrecioYen</small>
+
+                            <strong class="price-jpy"
+                                    data-mxn="1000">
+                                ¥9,262
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="btn">
+                        Inscribirse
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TARJETA 3
+            ================================== -->
+
+            <div class="card">
+
+                <img src="Imagenes/c.webp.webp"
+                     alt="Curso Programación en C">
+
+                <div class="card-content">
+
+                    <span class="institucion">UDG</span>
+
+                    <h3>Programación en C</h3>
+
+                    <p class="duracion">
+
+                        <img src="Imagenes/reloj.avif"
+                             alt="Reloj">
+
+                        Duración: 10 horas
+
+                    </p>
+
+                    <p>
+                        El curso de Programación C Básico se realiza
+                        con el propósito de adquirir conocimientos
+                        fundamentales sobre el lenguaje C, aprendiendo
+                        variables, operadores, estructuras de control,
+                        funciones y arreglos.
+                    </p>
+
+
+                    <div class="precios">
+
+                        <div class="precio">
+
+                            <img src="Imagenes/Mexico.webp"
+                                 alt="México">
+
+                            <small>PrecioMXN</small>
+
+                            <strong class="price-mxn"
+                                    data-mxn="2000">
+                                $2,000.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/usa.jpg"
+                                 alt="Estados Unidos">
+
+                            <small>PrecioUS</small>
+
+                            <strong class="price-usd"
+                                    data-mxn="2000">
+                                $118.29
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/japon.jpg"
+                                 alt="Japón">
+
+                            <small>PrecioYen</small>
+
+                            <strong class="price-jpy"
+                                    data-mxn="2000">
+                                ¥18,524
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="btn">
+                        Inscribirse
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TARJETA 4
+            ================================== -->
+
+            <div class="card">
+
+                <img src="Imagenes/ia.webp"
+                     alt="Curso Inteligencia Artificial">
+
+                <div class="card-content">
+
+                    <span class="institucion">UV</span>
+
+                    <h3>Inteligencia Artificial</h3>
+
+                    <p class="duracion">
+
+                        <img src="Imagenes/reloj.avif"
+                             alt="Reloj">
+
+                        Duración: 13 horas
+
+                    </p>
+
+                    <p>
+                        El curso de Inteligencia Artificial ofrece
+                        una introducción a los conceptos fundamentales
+                        de la inteligencia artificial y sus aplicaciones.
+                    </p>
+
+
+                    <div class="precios">
+
+                        <div class="precio">
+
+                            <img src="Imagenes/Mexico.webp"
+                                 alt="México">
+
+                            <small>PrecioMXN</small>
+
+                            <strong class="price-mxn"
+                                    data-mxn="5000">
+                                $5,000.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/usa.jpg"
+                                 alt="Estados Unidos">
+
+                            <small>PrecioUS</small>
+
+                            <strong class="price-usd"
+                                    data-mxn="5000">
+                                $500.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/japon.jpg"
+                                 alt="Japón">
+
+                            <small>PrecioYen</small>
+
+                            <strong class="price-jpy"
+                                    data-mxn="5000">
+                                ¥46,270
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="btn">
+                        Inscribirse
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TARJETA 5
+            ================================== -->
+
+            <div class="card">
+
+                <img src="Imagenes/logica.webp"
+                     alt="Curso Logica De Programacion">
+
+                <div class="card-content">
+
+                    <span class="institucion">UNAM</span>
+
+                    <h3>Logica De Programacion</h3>
+
+                    <p class="duracion">
+
+                        <img src="Imagenes/reloj.avif"
+                             alt="Reloj">
+
+                        Duración: 13 horas
+
+                    </p>
+
+                    <p>
+                        En este curso aprenderás los fundamentos de la
+                        lógica de programación y desarrollarás habilidades
+                        para resolver problemas de manera ordenada y
+                        eficiente. Conocerás conceptos básicos como
+                        algoritmos, variables, operadores, condicionales
+                        y ciclos.
+                    </p>
+
+
+                    <div class="precios">
+
+                        <div class="precio">
+
+                            <img src="Imagenes/Mexico.webp"
+                                 alt="México">
+
+                            <small>PrecioMXN</small>
+
+                            <strong class="price-mxn"
+                                    data-mxn="3000">
+                                $3,000.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/usa.jpg"
+                                 alt="Estados Unidos">
+
+                            <small>PrecioUS</small>
+
+                            <strong class="price-usd"
+                                    data-mxn="3000">
+                                $177.65
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/japon.jpg"
+                                 alt="Japón">
+
+                            <small>PrecioYen</small>
+
+                            <strong class="price-jpy"
+                                    data-mxn="3000">
+                                ¥27,700
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="btn">
+                        Inscribirse
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 TARJETA 6
+            ================================== -->
+
+            <div class="card">
+
+                <img src="Imagenes/sql.jpg"
+                     alt="Curso De Base De Datos SQL">
+
+                <div class="card-content">
+
+                    <span class="institucion">IPN</span>
+
+                    <h3>Base De Datos SQL</h3>
+
+                    <p class="duracion">
+
+                        <img src="Imagenes/reloj.avif"
+                             alt="Reloj">
+
+                        Duración: 13 horas
+
+                    </p>
+
+                    <p>
+                        En este curso aprenderás los fundamentos de SQL,
+                        un lenguaje utilizado para consultar, organizar
+                        y administrar información almacenada en bases
+                        de datos. Conocerás cómo crear y modificar tablas,
+                        agregar y consultar datos, y utilizar diferentes
+                        instrucciones para obtener información de manera
+                        rápida y eficiente mediante ejercicios prácticos.
+                    </p>
+
+
+                    <div class="precios">
+
+                        <div class="precio">
+
+                            <img src="Imagenes/Mexico.webp"
+                                 alt="México">
+
+                            <small>PrecioMXN</small>
+
+                            <strong class="price-mxn"
+                                    data-mxn="1000">
+                                $1000.00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/usa.jpg"
+                                 alt="Estados Unidos">
+
+                            <small>PrecioUS</small>
+
+                            <strong class="price-usd"
+                                    data-mxn="1000">
+                                $59.22
+                            </strong>
+
+                        </div>
+
+
+                        <div class="precio">
+
+                            <img src="Imagenes/japon.jpg"
+                                 alt="Japón">
+
+                            <small>PrecioYen</small>
+
+                            <strong class="price-jpy"
+                                    data-mxn="1000">
+                                ¥9,262
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="btn">
+                        Inscribirse
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
